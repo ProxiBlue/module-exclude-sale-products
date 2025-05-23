@@ -1,0 +1,24 @@
+{
+    "name": "proxiblue/module-exclude-sale-products",
+    "description": "Exclude sale products (with catalog price rules) from cart rules (welcome discount)",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "php": "~7.4.0||~8.1.0",
+        "magento/framework": "103.0.*",
+        "magento/module-sales-rule": "101.2.*",
+        "magento/module-catalog-rule": "101.2.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "ProxiBlue\\ExcludeSaleProducts\\": ""
+        }
+    }
+}
